@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    background-color: burlywood;
+}
+.table, th, td {
+    border: 1px solid black;
+  }
+  th, td {
+    border-style: ridge;
+  }
+ 
