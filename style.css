@@ -1,11 +1,98 @@
 body{
     text-align: center;
     background-color: burlywood;
+    text-decoration-color: #ddd;
 }
-.table, th, td {
-    border: 1px solid black;
+h1, h2 {
+  color: rgb(221, 131, 12);
+}
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 25%;
+    margin-left:9.5%; 
+    margin-right:15%;
   }
-  th, td {
-    border-style: ridge;
+  
+  table td, #cars th {
+    border: 1px solid #ddd;
+    padding: 8px;
   }
- 
+  .colors{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 25%;
+    margin-left:9.5%; 
+    margin-right:15%;
+  }
+  .colors {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .make{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    height: 25%;
+    margin-left:9.5%; 
+    margin-right:15%;
+  }
+  .make {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  
+  table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  table tr:hover {background-color: rgb(78, 47, 47);}
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(228, 147, 42);
+    color: white;
+  }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
