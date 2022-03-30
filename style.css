@@ -6,7 +6,20 @@ body{
 h1, h2 {
   color: rgb(221, 131, 12);
 }
-  table {
+a:link, a:visited {
+  background-color: rgb(228, 147, 42);
+  margin-top:8%; 
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: burlywood;
+}
+table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 80%;

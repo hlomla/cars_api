@@ -1,24 +1,50 @@
-
-    
-      
-        <div class="colors">
-            <label for="colors">Choose a car colour:</label>
-
-            <select name="colors" id="colors">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>My Cars Info Filter Widget</h1>
+                    <div class="colours">
+                        <label for="colours">Choose a car colour:</label>
+                        <select class="filterColours" id="colours">
+                            <option value="All">All</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Red">Red</option>
+                            <option value="Orange">Orange</option>
+                            <option value="White">White</option>
+                            <option value="Grey">Grey</option>
+                        </select>
+                    </div>
+           
+                    <div class="brands">
+                        <label for="brands">Choose a car brand:</label>
+                        <select class="filterBrands" id="brands">
+                            <option value="All">All</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Ford">Ford</option>
+                        </select>
+                    </div>
+                
+                    <button class="display">Display</button>
+                
+            <div class="displayFiltered">
+                <table class="carsFiltered">
+                    <th>Colour</th>
+                    <th>Brand</th>
+                </table>
+            </div>
         </div>
-
-    <div class="brands">
-        <label for="cars">Choose a car brand:</label>
-
-        <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
-        </select>
-    </div>
+        <a href="index.html">Car Info</a> 
+    </body>
+    <script src="index.js"></script>
+</html>
